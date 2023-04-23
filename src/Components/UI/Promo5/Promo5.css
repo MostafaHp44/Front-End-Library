@@ -1,0 +1,26 @@
+.MainPromo5
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F7F8FE;
+    padding: 2em;
+    margin: 2em;
+    align-items: center;
+}
+.imgpromo5
+{
+    width: 30em;
+}
+.Textpromo5
+{
+    font-size: 25px;
+    font-family: 'Source Code Pro';
+}
+.btnpromo5
+{
+    padding: 1em;
+}
+.smalllinepromo5{
+    font-size: 11px;
+    font-weight: 200;
+}

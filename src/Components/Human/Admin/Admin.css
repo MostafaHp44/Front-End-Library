@@ -1,0 +1,55 @@
+.navv
+{
+    background-color: bisque;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Listdashboard
+{
+    display: flex;
+    list-style-type: none;
+}
+.ColAdmin
+{
+    display: flex;
+    justify-content: space-around;
+}
+.MainColAdmin-1
+{
+    border: 1px #CFD6E0 solid;
+    padding: 2em;
+    margin: 1em;
+}
+.r-1,
+.r-2,
+.r-3,
+.r-4,
+.r-5,
+.r-6,
+.r-7,
+.r-8,
+.r-9,
+.r-10,
+.r-11,
+.r-12
+{
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.r-1::after,
+.r-2::after,
+.r-3::after,
+.r-4::after,
+.r-5::after,
+.r-6::after
+
+{
+    content: "";
+    display: flex;
+    border-bottom: 1px #CFD6E0 solid;
+    width: 10em;
+    padding: 1em;
+}

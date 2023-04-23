@@ -1,0 +1,120 @@
+.BooksCards
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin: 2em;
+}
+.MainBooksCards
+{
+    display: grid;
+    border: 1px #E3E6EF solid;
+    width: 12em;
+    transition: 0.6s;
+    margin-bottom: 2em;
+}
+.MainBooksCards:hover
+{
+    box-shadow: 0 0 5px 5px #C20067;
+    transition: 0.5s;
+
+}
+.TopDetalis
+{
+    background-color: bisque;
+    width: 100%;
+    height: 10em;
+
+}
+.MainImg
+{
+    text-align: center;
+    border: 1px #E3E6EF solid;
+    width: 8em;
+    position: relative;
+    top: 6em;
+    left: 2em;
+    height: 10em;
+    background-color: white;
+}
+.imgbook
+{
+    width: 8em;
+}
+.TextOfTopCards
+{
+    position: relative;
+    top: 7em;
+    padding: 1em;
+}
+.MainCategory
+{
+    font-size: 13px;
+    position: relative;
+    top: -1em;
+    font-weight: 100;
+}
+.MainTitle
+{
+    font-weight: 500;
+    font-family: 'DynaPuff';
+    
+}
+.MainAuthor
+{
+    position: relative;
+    top: 4px;
+    font-size: 14px;
+    color: red;
+    font-weight: 900;
+    font-family: 'Source Code Pro';
+
+}
+.MainFormat
+{
+    font-size: 13px;
+    font-weight: 300;
+}
+.DownDetalis
+{
+    padding: 1em;
+    width: 100%;
+    height: 26em;
+    position: relative;
+    top: 7em;
+
+}
+.TextOfDownCards
+{
+    position: relative;
+    top: 11em;
+}
+.Price
+{
+    font-family: 'Source Code Pro';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.saveoradd
+{
+    display: flex;
+    position: relative;
+    top: -36px;
+    justify-content: flex-end;
+}
+.saveitem
+{
+    padding-bottom: 4px;
+}
+.TotalRating
+{
+    position: relative;
+    top: -2em;
+}
+.RatingNumber
+{
+    font-family: 'Source Code Pro';
+    padding: 5px;
+}

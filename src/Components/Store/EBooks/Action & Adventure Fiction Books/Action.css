@@ -1,0 +1,26 @@
+.MainEBookCategory
+{
+    display: grid;
+    margin: 3em;
+    padding: 2em;
+}
+.SearchActionCategory
+{
+    position: relative;
+    left: 67em;
+    width: 20em;
+    display: flex;
+    align-items: center;
+}
+.btndisplay
+{
+    display: flex;
+    position: relative;
+    right: 21em;
+    gap: 1em;
+}
+.BigStore
+{
+    display: flex;
+    justify-content: space-around;
+}

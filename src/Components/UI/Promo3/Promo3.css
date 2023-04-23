@@ -1,0 +1,56 @@
+.MainPromo3
+{
+    display: grid;
+    padding: 2em;
+    margin: 2em;   
+}
+.TextPromo3
+{
+    text-align: center;
+    padding: 2em;
+    font-family: 'Tilt Prism';
+}
+.TextPromo3>h1
+{
+    font-size: 60px;
+    font-weight: 700;
+}
+.CardsPromo3
+{
+    display: flex;
+    justify-content: space-around;
+}
+.MainCard
+{
+    border: 1px #CFD6E0 solid;
+    border-radius: 20px;
+    padding: 5em;
+    transition: 0.6s;
+}
+.MainCard:hover
+{
+    box-shadow: 0 0 5px 5px #C20067;
+    transition: 0.5s;
+}
+.PrimaryText{
+    font-family: 'Source Code Pro';
+    font-weight: 200;
+    padding-bottom: 2em;
+    transition: 0.6s;
+}
+.PrimaryText:hover
+{
+    color: red;
+    transition: 0.7s;
+}
+.SecondaryText{
+    font-family: 'DynaPuff';
+}
+.PrimaryText::after
+{
+    content: "";
+    display: block;
+    border-bottom: 1px black solid;
+    padding: 2px;
+    width: 3em;
+}

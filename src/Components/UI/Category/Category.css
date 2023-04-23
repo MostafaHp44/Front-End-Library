@@ -1,0 +1,31 @@
+.MainCategories
+{
+    display: flex;
+    padding: 2em;
+    margin: 2em;
+}
+.BigBar
+{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+.BigBar::after
+{
+    background-color: #E3E6EF;
+    top: 2em;
+    content: "";
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    position: relative;
+    width: 34em;
+    z-index: -1;
+    right: 19em;
+}
+.active
+{
+    color: red;
+    border-bottom: 1px red solid;
+    padding-bottom: 8px;
+}

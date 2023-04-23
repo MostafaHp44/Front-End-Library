@@ -1,0 +1,79 @@
+.MainFooter
+{
+    display: grid;
+    background-color: #F0F2F9;
+    padding: 2em;
+}
+.TOP
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 1em;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4
+{
+display: contents;
+}
+
+.list-col-1,
+.list-col-2,
+.list-col-3,
+.list-col-4
+{
+    list-style-type: none;
+}
+.list-col-1>li,
+.list-col-2>li,
+.list-col-3>li,
+.list-col-4>li
+{
+    padding: 5px;
+    transition: 0.5s;
+}
+.MainText-list::after
+{
+    border-bottom: 2px #C20067 solid ;
+    content: "";
+    display: block;
+    position: relative;
+    transition: opacity .2s ease-out;
+    width: 29px;
+    top: -5px;
+}
+
+.Down
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.row-Down::before
+{
+    content: "";
+    border-top: 1px #E3E6EF solid;
+    display: block;
+    padding: 10px;
+    
+}
+.listsdown
+{
+    display: flex;
+}
+.listsdown>li
+{
+    margin-right: 2em;
+    transition: 0.5s;
+}
+.listsdown>li:hover
+{
+    color: #C20067;
+    transition: 0.5s;
+}
+.CopyRight
+{
+    text-align: center;
+}

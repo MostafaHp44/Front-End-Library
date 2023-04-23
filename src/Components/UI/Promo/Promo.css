@@ -1,0 +1,22 @@
+.MainPromo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 3em;
+    margin: 3em;
+}
+.imgpromo
+{
+    width: 30em;
+}
+.MainText-1
+{
+    font-family: 'Source Code Pro';
+
+}
+.MainText-2
+{
+    font-family: 'DynaPuff';
+    font-weight: 300;
+}

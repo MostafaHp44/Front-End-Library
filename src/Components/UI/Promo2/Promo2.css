@@ -1,0 +1,38 @@
+.MainPromo2
+{   
+    display: grid;
+    padding: 2em;
+    margin: 2em;
+}
+.TextPromo2
+{
+    text-align: center;
+    font-family: 'Source Code Pro';
+    padding: 25px;
+    transition: 0.5s;
+
+}
+
+.IconPromo2
+{
+    display: flex;
+    justify-content: center;
+
+}
+.iconp2
+{
+    display: grid;
+    padding: 1em;
+    margin: 1em;
+    transition: 0.5s;
+}
+.iconp2:hover
+{
+    transition: 0.7s;
+    transform: rotate(360deg);
+    color: #C20067;
+}
+.icon
+{
+    text-align: center;
+}
