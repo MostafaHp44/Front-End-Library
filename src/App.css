@@ -1,5 +1,163 @@
-PublisherBook*
+*
 {
- scroll-behavior: smooth;
+scroll-behavior: smooth;
 margin: 0;
 }
+
+*
+{
+scroll-behavior: smooth;
+margin: 0;
+}
+
+
+
+
+
+/* Mobile */
+
+@media (max-width: 767px) 
+{
+.TopNav
+{
+    width: 185%;
+    height: 185%;
+}
+.DownNav
+{
+    display: none;
+}
+
+.MainText-1>h1
+{
+    font-size: 8em;
+}
+.MainText-2>p
+{
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.MainPromo,
+.MainPromo2,
+.MainPromo3
+{
+    width: 320%;
+    height: 320%;
+}
+.TextPromo2>h1
+{
+    font-size: 8em;
+}
+.TextPromo3>h1
+{
+    font-size: 8em;
+}
+.CardsPromo3
+{
+    flex-wrap: wrap;
+}
+.MainCard
+{
+    margin: 1em;
+}
+.PrimaryText
+{
+    font-size: 6em;
+}
+.SecondaryText
+{
+    font-size: 4em;
+}
+.MainFooter
+{
+    width: 338%;
+}
+
+}
+
+/* Small Screens */
+
+@media (max-width: 992px) 
+{
+    .TopNav
+    {
+        width: 338%;
+    }
+    .DownNav
+    {
+        width: 338%;
+        
+    }
+    
+    .MainText-1>h1
+    {
+        font-size: 8em;
+    }
+    .MainText-2>p
+    {
+        font-size: 3em;
+        font-weight: 200;
+    }
+    
+    .MainPromo,
+    .MainPromo2,
+    .MainPromo3
+    {
+        width: 320%;
+        height: 320%;
+    }
+    .TextPromo2>h1
+    {
+        font-size: 8em;
+    }
+    .TextPromo3>h1
+    {
+        font-size: 8em;
+    }
+    .CardsPromo3
+    {
+        flex-wrap: wrap;
+    }
+    .MainCard
+    {
+        margin: 1em;
+    }
+    .PrimaryText
+    {
+        font-size: 6em;
+    }
+    .SecondaryText
+    {
+        font-size: 4em;
+    }
+    .MainFooter
+    {
+        width: 338%;
+    }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) 
+{
+
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px)
+{
+
+}
+
+/* Custom */
+
+@media (max-width: 1199px) 
+{
+    
+}
+
+
+
+
