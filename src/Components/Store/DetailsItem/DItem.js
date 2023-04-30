@@ -121,7 +121,8 @@ product.filter((item,) => {
                     <Button variant="outline-danger" style={{ marginBottom: '1em' }} >Read Preview</Button>
                 </div>
                 <div className="OptionReader" style={{textAlign:"center"}}>
-                    <Button variant="outline-danger"className="SaveLater"  style={{border:"none"}} onClick={()=>{
+                    <div className="SaveLater">
+                    <Button variant="outline-danger"  style={{border:"none"}} onClick={()=>{
                             const saved={
                                 title:item.title,
                                 img:item.img,
@@ -134,11 +135,14 @@ product.filter((item,) => {
                           }}>
                         <span><UisBookmark /> Save Later</span>
                     </Button>
-                    <div className="DownLoadToApp">
-                        <span> <UilImport /> Download To App</span>
                     </div>
-                    <div className="Share">
-                        <span><UilShare /> Share Tile</span>
+
+                    <div className="RequestBook">
+                        <Button variant="outline-danger" style={{border:"none"}}> <UilImport /> Request IT !</Button>
+                    </div>
+
+                    <div className="ShareIT">
+                        <Button variant="outline-danger" style={{border:"none"}}> <UilShare /> Share IT !</Button>
                     </div>
                 </div>
 

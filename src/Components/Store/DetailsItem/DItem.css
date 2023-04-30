@@ -98,15 +98,15 @@
     top: 0em
 }
 .SaveLater,
-.DownLoadToApp,
-.Share
+.RequestBook,
+.ShareIT
 {
     padding: 1em;
     text-align: center;
 }
 .SaveLater::after,
-.DownLoadToApp::after,
-.Share::after,
+.RequestBook::after,
+.ShareIT::after,
 .colditem-1::after
 {
 content: "";

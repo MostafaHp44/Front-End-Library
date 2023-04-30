@@ -5,6 +5,7 @@ import { UilFacebook,UilTwitter,UilLinkedin,UilInstagramAlt,UilGithub,UilPen} fr
 import Button from 'react-bootstrap/Button';
 import { useState } from "react";
 import InputGroup from 'react-bootstrap/InputGroup';
+import Badge from 'react-bootstrap/Badge';
 import Form from 'react-bootstrap/Form';
 
 
@@ -73,7 +74,9 @@ const User = () => {
     return (
     <React.Fragment>
         <div className="MainUser">
-        <section style={{backgroundColor: '#eee'}}>
+
+            <section style={{backgroundColor: '#eee'}}>
+
         <div className="container py-5">
           <div className="row">
             <div className="col">
@@ -221,13 +224,99 @@ const User = () => {
                 </div>
               </div>
               <div className="row">
-              
+                <div className="Request">
+        <table className="table align-middle mb-0 bg-white">
+        <thead className="bg-light">
+          <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div className="d-flex align-items-center">
+                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style={{width: '45px', height: '45px'}} className="rounded-circle" />
+                <div className="ms-3">
+                  <p className="fw-bold mb-1">Book1</p>
+                  <p className="text-muted mb-0">EBook</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p className="fw-normal mb-1">This is Book 1</p>
+              <p className="text-muted mb-0">Action Book</p>
+            </td>
+            <td>
+              <Badge bg="primary">Pending</Badge>{' '}
+            </td>
+            <td>
+            <Button variant="danger">Delete</Button>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div className="d-flex align-items-center">
+                <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" className="rounded-circle" alt="" style={{width: '45px', height: '45px'}} />
+                <div className="ms-3">
+                  <p className="fw-bold mb-1">Book2</p>
+                  <p className="text-muted mb-0">Audio-Book</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p className="fw-normal mb-1">this is book 2</p>
+              <p className="text-muted mb-0">Art Book</p>
+            </td>
+            <td>
+            <Badge bg="danger">Not accept</Badge>
+            </td>
+            <td>
+            <Button variant="danger">Delete</Button>
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div className="d-flex align-items-center">
+                <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" className="rounded-circle" alt="" style={{width: '45px', height: '45px'}} />
+                <div className="ms-3">
+                  <p className="fw-bold mb-1">Book3</p>
+                  <p className="text-muted mb-0">Documnet</p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <p className="fw-normal mb-1">this is book 3 </p>
+              <p className="text-muted mb-0">Comics Documnet</p>
+            </td>
+            <td>
+            <Badge bg="success">accept</Badge>
+            </td>
+            <td>
+              <button type="button" className="btn btn-link btn-rounded btn-sm fw-bold" data-mdb-ripple-color="dark">
+                done
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+                  </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+            </section>
+
+
+          
+
         </div>
+       
     </React.Fragment>
     );
 }
