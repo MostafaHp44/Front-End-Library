@@ -2,15 +2,16 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { UilApps,UilListUl,UilBookmarkFull,UilFavorite,UilShoppingCartAlt} from '@iconscout/react-unicons'
-import pic1 from '../1.png'
 import { Link } from "react-router-dom";
-import { AddToCart } from "../../../Redux/Action/Action"
+import { AddToCart, SaveItem } from "../../../Redux/Action/Action"
 import { useState } from 'react'
 import { useDispatch,useSelector } from "react-redux";
 
 
 const Business = () => {
     const [startaddtoitem,setstartaddtoitem]=useState(false)
+    const [starttosaveitem,setstarttosaveitem]=useState(false)
+
     const dispatch=useDispatch()
     
     const product=useSelector(state=>state.product)
@@ -18,6 +19,11 @@ const Business = () => {
         setstartaddtoitem(true)
         console.log(startaddtoitem);
     }
+    const handelstarttosaveitem=()=>{
+        setstarttosaveitem(true)
+        console.log(starttosaveitem);
+    }
+
     return (
     <React.Fragment>
         <div className="MainEBookCategory">
@@ -45,52 +51,65 @@ const Business = () => {
              </div>
              
              <div className="MainEBooks">
-            <div className="BooksCards">
+             <div className="BooksCards">
 {
-product.map((item,key)=>(
+product.filter((item)=>{
+     return item.category=== 'Business' 
+}).map((item,key)=>(
 
-                <div className="MainBooksCards">
-                   <Link style={{textDecoration:"none",color:'black'}} to='/'>
+    <div className="MainBooksCards" key={key}>
+                    
+    <Link style={{textDecoration:"none",color:'black'}} to={item.id_product}>
 <div className="TopDetalis">
 <div className="MainImg"><img src={item.img} className="imgbook"></img></div>
 <div className="TextOfTopCards">
-<div className="MainCategory"><span>Ebook</span></div>
-<div className="MainTitle"><span>The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life</span></div>
-<div className="MainAuthor"><span>Mostafaamin</span></div>
+<div className="MainCategory"><span>{item.main_category}</span></div>
+<div className="MainTitle"><span>{item.title}</span></div>
+<div className="MainAuthor"><span>{item.author}</span></div>
+<div className="MainFormat"><span>{item.format}</span></div>
 </div>
 </div>
-                   </Link>
+    </Link>
 
-<div className="DownDetalis">
-    <div className="TextOfDownCards">
-    <div className="Price"><span>500$</span></div>
-    <div className="saveoradd">
-    <div className="saveitem"><Button variant="outline-danger" style={{border:'none'}}><UilBookmarkFull/></Button></div>
-    <div className="addtocart"><Button variant="outline-info" style={{border:'none'}} onClick={()=>{
-                            const itemm={
-                                title:item.title,
-                                price:item.price,
-                                statusstock:item.statusstock,
-                                main_category:item.main_category,
-                                category:item.category,
-                                quantity:item.quantity,
-                                id_product:item.id_product,
-                            }
-                             dispatch(AddToCart(itemm))
-                             handelstarttoadditem()
+    <div className="DownDetalis">
+<div className="TextOfDownCards">
+<div className="Price"><span>{item.price}<span className="colorprice" style={{color:"green" ,fontSize:'10px'}}>.EGP</span></span></div>
+<div className="saveoradd">
+<div className="saveitem"><Button variant="outline-danger" style={{border:'none'}} onClick={()=>{
+             const saved={
+                 title:item.title,
+                 img:item.img,
+                 price:item.price,
+                 author:item.author,
+                 format:item.format
+             }
+              dispatch(SaveItem(saved))
+              handelstarttosaveitem()
 
-                          }}><UilShoppingCartAlt/></Button></div>
-    </div>
-    <div className="TotalRating">
-    <div className="MainRating"><UilFavorite/><UilFavorite/><UilFavorite/><UilFavorite/></div>
-    <div className="RatingNumber"><span>4/5</span></div>
-    </div>
-   
-    </div>
+           }}><UilBookmarkFull/></Button></div>
+<div className="addtocart"><Button variant="outline-info" style={{border:'none'}} onClick={()=>{
+             const itemm={
+                 title:item.title,
+                 img:item.img,
+                 price:item.price,
+                 author:item.author,
+                 format:item.format
+             }
+              dispatch(AddToCart(itemm))
+              handelstarttoadditem()
+
+           }}><UilShoppingCartAlt/></Button></div>
+</div>
+<div className="TotalRating">
+<div className="MainRating"><UilFavorite/><UilFavorite/><UilFavorite/><UilFavorite/></div>
+<div className="RatingNumber"><span>4/5</span></div>
+</div>
 
 </div>
 
-               </div>
+    </div>
+
+</div>
 ))
 }
                 

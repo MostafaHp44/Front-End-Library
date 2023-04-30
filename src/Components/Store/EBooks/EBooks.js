@@ -36,7 +36,8 @@ const EBooks = () => {
 product.map((item,key)=>(
 
                 <div className="MainBooksCards" key={key}>
-                   <Link style={{textDecoration:"none",color:'black'}} to='/'>
+                    
+                   <Link style={{textDecoration:"none",color:'black'}} to={item.id_product}>
 <div className="TopDetalis">
 <div className="MainImg"><img src={item.img} className="imgbook"></img></div>
 <div className="TextOfTopCards">
@@ -48,7 +49,7 @@ product.map((item,key)=>(
 </div>
                    </Link>
 
-<div className="DownDetalis">
+                   <div className="DownDetalis">
     <div className="TextOfDownCards">
     <div className="Price"><span>{item.price}<span className="colorprice" style={{color:"green" ,fontSize:'10px'}}>.EGP</span></span></div>
     <div className="saveoradd">
@@ -84,7 +85,7 @@ product.map((item,key)=>(
    
     </div>
 
-</div>
+                   </div>
 
                </div>
 ))

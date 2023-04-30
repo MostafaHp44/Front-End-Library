@@ -1,5 +1,122 @@
-PublisherBook*
+
+*
 {
- scroll-behavior: smooth;
+scroll-behavior: smooth;
 margin: 0;
 }
+
+
+
+
+
+/* Mobile */
+
+@media (max-width: 768px) 
+{
+.TopNav
+{
+    visibility: hidden;
+}
+.DownNav
+{
+    display: none;
+}
+.MainBurger
+{
+    display: block;
+}
+
+.MainText-1>h1
+{
+    font-size: 5em;
+}
+.MainText-2>p
+{
+    font-size: 2em;
+    font-weight:lighter;
+}
+
+.MainPromo,
+.MainPromo2,
+.MainPromo3,
+.MainEBooks,
+.MainDItem,
+.MainSignUp,
+.MainLogin,
+.MainCart,
+.MainSavedItem
+{
+    width: 320%;
+}
+.TextPromo2>h1
+{
+    font-size: 4em;
+}
+.TextPromo3>h1
+{
+    font-size: 4em;
+}
+.CardsPromo3
+{
+    flex-wrap: wrap;
+}
+.MainCard
+{
+    margin: 1em;
+}
+.PrimaryText
+{
+    font-size: 4em;
+}
+.SecondaryText
+{
+    font-size: 2em;
+}
+.MainFooter
+{
+    width: 338%;
+}
+
+}
+
+/* Small Screens */
+
+@media (min-width: 769px) and (max-width:1500px)
+{
+    .MainNavBar
+    {
+        width: 195%;
+    }
+    
+  .MainPromo,
+  .MainPromo2,
+  .MainPromo3,
+  .MainFooter
+  {
+    width: 180%;
+  }
+    .CardsPromo3
+    {
+        flex-wrap: wrap;
+    }
+    .MainCard
+{
+    margin: 1em;
+}
+
+}
+
+@media (min-width: 770px) {
+
+.MainBurger
+{
+    display: none;
+}
+
+}
+
+
+
+
+
+

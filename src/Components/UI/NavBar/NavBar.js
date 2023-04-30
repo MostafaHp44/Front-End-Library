@@ -4,10 +4,10 @@ import {UilBookReader,UilAngleDown,UilSignin,UilUserPlus,UilShoppingBag,UilHeart
 import logo from './Logo/logo.png'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import Badge from 'react-bootstrap/Badge';
-import { useSelector,useDispatch} from "react-redux";
+import { useSelector} from "react-redux";
+import BergurMen from "./Burger/Burger";
 
 
 
@@ -76,7 +76,8 @@ const NavBar = () => {
                      <Link style={{textDecoration:'none'}} to='ebooks'>
                         <span>E-Books<UilAngleDown/></span>
                     </Link>
-                    <div className="Category-Ebook">
+
+                     <div className="Category-Ebook">
                     <div className="ColBook-1">
                         <span>Explore Ebooks</span>
                         <div className="RowBook-1">
@@ -202,6 +203,8 @@ const NavBar = () => {
             </ul>
         </nav>
     </div>
+
+   <BergurMen/>
      
 </div>
                 

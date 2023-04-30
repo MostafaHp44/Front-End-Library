@@ -7,7 +7,8 @@ import img1 from './1.png'
     Carts:[],
     SavedItem:[],
     product:[
-        {
+
+       {
             id_product:'22',
             img:img1,
             main_category:"EBook",
@@ -18,7 +19,70 @@ import img1 from './1.png'
             category:"Action",
             quantity:1,
             numrate:3,
-            startrate:""
+            startrate:"",
+            numberofpages:"300",
+            numberofhours:"2",
+            ReleaseDate:"25/6/2022",
+            ISBN:"10579288",
+            Language:"English"
+            
+       },
+
+       {
+        id_product:'23',
+        img:img1,
+        main_category:"EBook",
+        title:"sIMPALE TEXT just ex1",
+        author:'Sens mark',
+        format:"Digital",
+        price:200,
+        category:"Art",
+        quantity:1,
+        numrate:3,
+        startrate:"",
+        numberofpages:"400",
+        numberofhours:"5",
+        ReleaseDate:"9/9/2020",
+        ISBN:"10903233",
+        Language:"English"
+       },
+
+       {
+    id_product:'24',
+    img:img1,
+    main_category:"EBook",
+    title:"Example 1 book 1",
+    author:'Jouhan weak',
+    format:"Digital",
+    price:200,
+    category:"Biography",
+    quantity:1,
+    numrate:3,
+    startrate:"",
+    numberofpages:"30",
+    numberofhours:"1",
+    ReleaseDate:"2/8/2020",
+    ISBN:"13025920",
+    Language:"English"
+       },
+
+       {
+    id_product:'25',
+    img:img1,
+    main_category:"EBook",
+    title:"you can do it ",
+    author:'oliver twist',
+    format:"Digital",
+    price:200,
+    category:"Business",
+    quantity:1,
+    numrate:3,
+    startrate:"",
+    numberofpages:"1300",
+    numberofhours:"20",
+    ReleaseDate:"22/10/2021",
+    ISBN:"93457325",
+    Language:"English"
        },
     ]
     

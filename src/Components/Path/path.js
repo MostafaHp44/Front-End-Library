@@ -17,34 +17,40 @@ import AddToCart from "../Store/AddToCart/AddToCart";
 import SaveItem from "../Store/SavedItem/SavedItem";
 import Admin from "../Human/Admin/Admin";
 import User from "../Human/User/User";
+import { useSelector } from "react-redux";
 
 
 const Path = () => {
+    
+    const product=useSelector(state=>state.product)
+
     return (
     <React.Fragment>
-<Routes>
-    <Route path="/"  exact element={<UI/>}></Route>
-    <Route path="login"   element={<Login/>}></Route>
-    <Route path="/signup" element={<SignUp/>}></Route>
-    <Route path="/admin" element={<Admin/>}></Route>
-    <Route path="/user" element={<User/>}></Route>
-    <Route path="/cart" element={<AddToCart/>}></Route>
-    <Route path="/saveditem" element={<SaveItem/>}></Route>
-    <Route path="/ebooks" element={<EBooks/>}></Route>
-    <Route path="/action" element={<Action/>}></Route>
-    <Route path="/art" element={<Art/>}></Route>
-    <Route path="/biography" element={<Biography/>}></Route>
-    <Route path="/business" element={<Business/>}></Route>
-    <Route path="/career" element={<Career/>}></Route>
-    <Route path="/childrens" element={<Childrens/>}></Route>
-    <Route path="/classics" element={<Classics/>}></Route>
-    <Route path="/comics" element={<Comics/>}></Route>
-    <Route path="/d" element={<DItem/>}></Route>
+        
+    <Routes>
+            <Route path="/"  exact element={<UI/>}></Route>
+            <Route path="login"   element={<Login/>}></Route>
+            <Route path="/signup" element={<SignUp/>}></Route>
+            <Route path="/admin" element={<Admin/>}></Route>
+            <Route path="/user" element={<User/>}></Route>
+            <Route path="/cart" element={<AddToCart/>}></Route>
+            <Route path="/saveditem" element={<SaveItem/>}></Route>
+            <Route path="/ebooks" element={<EBooks/>}></Route>
+            <Route path="/action" element={<Action/>}></Route>
+            <Route path="/art" element={<Art/>}></Route>
+            <Route path="/biography" element={<Biography/>}></Route>
+            <Route path="/business" element={<Business/>}></Route>
+            <Route path="/career" element={<Career/>}></Route>
+            <Route path="/childrens" element={<Childrens/>}></Route>
+            <Route path="/classics" element={<Classics/>}></Route>
+            <Route path="/comics" element={<Comics/>}></Route>
+            <Route path="/ebooks/:ItemId" element={<DItem/>}></Route>
+        
+    
+        </Routes>
+       
     
 
-
-
-</Routes>
     </React.Fragment>
     );
 }
